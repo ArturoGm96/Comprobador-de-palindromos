@@ -7,7 +7,6 @@ h1{
     color: #fff;
     font-style: oblique;
     font-size: 50px;
-    
 }
 
 h2{
@@ -24,7 +23,7 @@ h2{
     text-align: center;
     justify-content: center;
     animation-name: inicio;
-    animation-duration: 3.5s;
+    animation-duration: 1.5s;
 }
 
 .entrada{
