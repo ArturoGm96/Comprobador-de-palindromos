@@ -7,6 +7,7 @@ h1{
     color: #fff;
     font-style: oblique;
     font-size: 50px;
+    
 }
 
 h2{
@@ -22,6 +23,8 @@ h2{
     flex-flow: wrap column;
     text-align: center;
     justify-content: center;
+    animation-name: inicio;
+    animation-duration: 3.5s;
 }
 
 .entrada{
@@ -67,5 +70,11 @@ h2{
 
     h2{
         font-size: 20px;
+    }
+}
+
+@keyframes inicio {
+    0%{
+        transform: scale(.3);
     }
 }
