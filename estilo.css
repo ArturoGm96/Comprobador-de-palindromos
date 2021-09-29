@@ -33,12 +33,12 @@ h2{
 #caja{
     width: 250px;
     height: 20px;
-    font-size: 22px;
+    font-size: 18px;
     border: 2px #fff solid;
     background: darkslategray;
     color: #fff;
     text-align: center;
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 5px 3px 3px black;
 }
 
 #boton{
@@ -47,7 +47,7 @@ h2{
     background: darkslategray;
     color: #fff;
     border: 2px solid #fff;
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 5px 3px 3px black;
 }
 
 #boton:hover{
