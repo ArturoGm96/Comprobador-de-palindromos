@@ -6,7 +6,7 @@
 h1{
     color: #fff;
     font-style: oblique;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h2{
@@ -31,21 +31,23 @@ h2{
 }
 
 #caja{
-    width: 300px;
-    height: 30px;
+    width: 250px;
+    height: 20px;
     font-size: 22px;
     border: 2px #fff solid;
     background: darkslategray;
     color: #fff;
     text-align: center;
+    box-shadow: 10px 5px 5px grey;
 }
 
 #boton{
-    width: 100px;
-    height: 35px;
+    width: 75px;
+    height: 25px;
     background: darkslategray;
     color: #fff;
     border: 2px solid #fff;
+    box-shadow: 10px 5px 5px grey;
 }
 
 #boton:hover{
@@ -56,19 +58,19 @@ h2{
 
 @media screen and (max-width: 480px) {
     h1{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     #caja{
-        width: 250px;
+        width: 200px;
     }
 
     #boton{
-        width: 80px;
+        width: 60px;
     }
 
     h2{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
