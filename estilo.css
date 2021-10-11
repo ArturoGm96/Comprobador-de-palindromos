@@ -3,27 +3,62 @@
     padding: 0px;
 }
 
-h1{
-    color: #fff;
-    font-style: oblique;
-    font-size: 40px;
-}
-
-h2{
-    font-style: oblique;
-    margin-top: 50px;
-}
-
-.container-fluid{
-    width: 100%;
+.principal{
+    background: rgb(192, 190, 190);
+    width: 100vw;
     height: 100vh;
-    background-color: darkslategray;
     display: flex;
-    flex-flow: wrap column;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+}
+
+.encabezado{
+    text-align: center;
+    align-items: center;
     justify-content: center;
-    animation-name: inicio;
-    animation-duration: 1.5s;
+}
+
+#info{
+    margin-top: 25px;
+    font-size: 40px;
+    color: rgb(150, 33, 33);
+    font-weight: bold;
+}
+
+p{
+    margin: 20px;
+    padding: 10px;
+    width: 600px;
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(150, 33, 33);
+}
+
+h1{
+    color: rgb(150, 33, 33);
+}
+
+.contenedor{
+    width: 50vw;
+    height: 50vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: rgb(150, 33, 33) 5px solid;
+    border-radius: 30px;
+}
+
+#explicacion{
+    display: block;
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .entrada{
@@ -31,51 +66,188 @@ h2{
 }
 
 #caja{
-    width: 250px;
-    height: 20px;
-    font-size: 18px;
-    border: 2px #fff solid;
-    background: darkslategray;
-    color: #fff;
+    width: 300px;
+    height: 30px;
+    font-size: 22px;
+    border: 2px rgb(150, 33, 33) solid;
+    color: #000;
     text-align: center;
-    box-shadow: 5px 3px 3px black;
+    background-color: transparent;
 }
 
 #boton{
-    width: 75px;
-    height: 25px;
-    background: darkslategray;
-    color: #fff;
-    border: 2px solid #fff;
-    box-shadow: 5px 3px 3px black;
+    width: 100px;
+    height: 35px;
+    color: #000;
+    border: 2px solid rgb(150, 33, 33);
+    background: transparent;
 }
 
 #boton:hover{
-    background: black;
+    background: rgb(150, 33, 33);;
     color: #fff;
     transition: background-color 1s;
 }
 
-@media screen and (max-width: 480px) {
-    h1{
+h2{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    #explicacion{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .contenedor{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #info{
+        font-size: 30px;
+        
+    }
+    
+    p{
+        margin: 15px;
+        padding: 5px;
+        width: 400px;
+        font-size: 15px;
+    }
+
+    .contenedor{
+        width: 80vw;
+        height: 50vh;
+        margin: 5px;
+    }
+    
+    #explicacion{
+        width: 300px;
+        margin-bottom: 25px;
+    }
+
+    h2{
         font-size: 20px;
     }
 
     #caja{
-        width: 200px;
-    }
-
-    #boton{
-        width: 60px;
-    }
-
-    h2{
+        width: 250px;
+        height: 25px;
         font-size: 15px;
+    }
+    
+    #boton{
+        width: 80px;
+        height: 25px;
     }
 }
 
-@keyframes inicio {
-    0%{
-        transform: scale(.3);
+@media screen and (max-width: 375px) {
+    #info{
+        font-size: 25px;
+        
+    }
+    
+    p{
+        margin: 15px;
+        padding: 5px;
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .contenedor{
+        width: 85vw;
+        height: 60vh;
+        margin: 5px;
+    }
+    
+    #explicacion{
+        width: 250px;
+    }
+
+    #caja{
+        width: 250px;
+        height: 25px;
+        font-size: 15px;
+    }
+    
+    #boton{
+        width: 80px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #info{
+        font-size: 22px;
+        
+    }
+    
+    p{
+        margin: 5px;
+        padding: 5px;
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .contenedor{
+        width: 85vw;
+        height: 75vh;
+        margin: 3px;
+    }
+    
+    #explicacion{
+        width: 250px;
+    }
+
+    #caja{
+        width: 230px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    h2{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #info{
+        font-size: 45px;
+        
+    }
+
+    .contenedor{
+        height: 50vh;
+        font-size: 30px;
+    }
+    
+    p{
+        font-size: 25px;
+    }
+    
+    #explicacion{
+        width: 800px;
+        font-size: 20px;
+    }
+
+    #caja{
+        width: 350px;
+        height: 35px;
+        font-size: 30px;
+    }
+    
+    #boton{
+        width: 120px;
+        height: 35px;
+    }
+
+    h1{
+        font-size: 45px;
     }
 }

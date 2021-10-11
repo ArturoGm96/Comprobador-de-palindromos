@@ -6,26 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="iconos.css">
     <title>Comprobador de palindromos</title>
 </head>
 <body>
     <script src="algoritmo.js"></script>
     
-    <div class="container-fluid">
-        <h1>COMPROBADOR DE PALINDROMOS</h1>
-
-        <div class="entrada">
-            <input type="text" id="caja">
+    <div class="principal">
+        <div class="encabezado">
             
+             <h1 id="info">QUE ES UN PALINDROMO</h1>
+
+            <p>
+                Un palíndromo es un término o una expresión que 
+                puede leerse tanto de izquierda a derecha como de 
+                derecha a izquierda (es decir, expresa lo mismo al 
+                ser leído de manera tradicional o al revés). 
+                Se trata del equivalente a lo que, respecto a los números,
+                 se conoce como capicúa.
+            </p>
         </div>
-
-        <div class="entrada">
-            <button id="boton" onclick="llamada()">Play</button>
+    
+        <div class="contenedor">
+            <label id="explicacion">La siguiente sección le ayudará a saber si una palabra es palindromo a no:</label>
+            <h1>Comprobador de palindromos</h1>
+    
+            <div class="entrada">
+                <input type="text" id="caja">
+                
+            </div>
+    
+            <div class="entrada">
+                <button id="boton" onclick="llamada()">Play</button>
+            </div>
+    
+            <h2 id="resultado"></h2>
         </div>
-
-        <h2 id="resultado"></h2>
-
     </div>
+    
     
 </body>
 </html>
