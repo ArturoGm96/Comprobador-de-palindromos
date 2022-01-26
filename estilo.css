@@ -93,6 +93,11 @@ h2{
     margin-top: 15px;
 }
 
+#pie{
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     #explicacion{
         width: 300px;
